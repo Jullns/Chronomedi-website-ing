@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+html{
+    scrollbar-color: #F98296 #097c75;
+    scrollbar-width: auto; 
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    padding-top: 30px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F0F0F0;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: fixed;
+    width: 90%;
+    max-width: 1200px;
+    top: 15px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+.logo{
+    height: 60px;
+    width: auto;
+}
+.nav-menu{
+    display: flex;
+    gap: 25px;
+}
+.nav-menu a{
+    color: rgb(2, 79, 85, 90);
+    margin-left: 20px; 
+    font-weight: bold;   
+}
+.nav-menu a:hover{
+    color: #50CFC7;
+}
+.btn-header{
+    background-color: #F98296;
+    color: #621925;
+    border-radius: 26px;
+    padding: 10px;
+    border: none;
+    width: 95px;
+    margin-right: 50px;
+}
+.btn-header:hover{
+    background-color: #7FE8E8;
+    color: #053D3A;
+}
+.hero{
+    background-color: #33C5C5;
+    color: #053D3A;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 16px;
+    padding: 0 20px 30px 20px;
+    text-align: center;
+}
+.image-container{
+    width: 100%;
+    max-height: 165px;
+}
+.img-box{
+    width: 570px;
+    max-width: 90%;
+    height: auto;
+    margin-top: -235px;
+    z-index: 2;
+}
+.upperText{
+    font-size: 100px;
+    font-family: "Lexend", sans-serif;
+    margin-left: 0;
+    font-weight: 650;
+}
+.bellowText p{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.about{
+    background-color: #f8f1f1;
+    height: 500px;
+    padding-top: 20px;
+}
+.textTitleDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+.title{
+    text-align: center;
+    color: #053D3A;
+    
+}
+.text{
+    display: flex;
+    align-self: center;
+    padding-left: 50px;
+    font-size: 18px;
+    color: #053D3A;
+}

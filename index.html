@@ -109,57 +109,70 @@
 
     <!--Proposta e problemática-->
     <section id="proposal">
+        <div class="titleProposta">
+            <h1>Proposta & Problemática</h1>
+        </div>
         <div class="proposta">
-            <div class="titleProposta">
-                <h4>Pesquisa</h4>
-                <br>
-                <h1>Proposta & Problemática</h1>
+            <div class="video">
+                <img src="https://i.guim.co.uk/img/media/20491572b80293361199ca2fc95e49dfd85e1f42/0_236_5157_3094/master/5157.jpg?width=700&quality=85&auto=format&fit=max&s=75467b37e566112a23646eeb8cbc9a26" alt="">
             </div>
-            <div class="maincontent">
-                <div class="video">
-                    <video poster="">
-                        <source src="video.mp4">
-                    </video>
-                </div>
-                <div class="textContent">
-                    <p>
-                        O uso incorreto de medicamentos representa um desafio para pacientes de todas as idades, ocasionando esquecimentos, falhas na organização da rotina terapêutica e dificuldades na interpretação de prescrições médicas.
-                        O Chronomedi foi desenvolvido para minimizar esses problemas por meio da automação, organização e monitoramento do tratamento, oferecendo maior segurança e qualidade de vida.
-                    </p>
-                </div>
+            <div class="textContent">
+                <p>
+                    O uso incorreto de medicamentos representa um desafio para pacientes de todas as idades, ocasionando esquecimentos, falhas na organização da rotina terapêutica e dificuldades na interpretação de prescrições médicas.
+                    <br>
+                    <br>
+                    O Chronomedi foi desenvolvido para minimizar esses problemas por meio da automação, organização e monitoramento do tratamento, oferecendo maior segurança e qualidade de vida.
+                </p>
             </div>
         </div>
     </section>
 
     <!--Solution-->
-    <section id="solution">
+    <section id="solution" class="solution-cont">
+        <div class="titleSolution">
+            <h1>Soluções</h1>
+        </div>
         <div class="solution">
             <div class="caixaLeft">
-                <div class="titleSolution">
-                    <h1>Soluções</h1>
-                </div>
-                <div class="boxLeft">
-                    <div class="box1 active">
+                <div class="box-left">
+                    <div class="box-item">
                         <h1>Caixa de remédios</h1>
+                        <div class="box-texto">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum sunt veniam aperiam perferendis fugit labore blanditiis delectus, sequi, necessitatibus maxime voluptates? Atque vero aspernatur magni, tempora fugit facilis explicabo.</p>
+                        </div>
                     </div>
-                    <div class="box2 active">
+
+                    <div class="box-item">
                         <h1>Alertas</h1>
+                        <div class="box-texto">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum sunt veniam aperiam perferendis fugit labore blanditiis delectus, sequi, necessitatibus maxime voluptates? Atque vero aspernatur magni, tempora fugit facilis explicabo.</p>
+                        </div>
                     </div>
-                    <div class="box3 active">
+
+                    <div class="box-item">
                         <h1>Aplicativo</h1>
+                        <div class="box-texto">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum sunt veniam aperiam perferendis fugit labore blanditiis delectus, sequi, necessitatibus maxime voluptates? Atque vero aspernatur magni, tempora fugit facilis explicabo.</p>
+                        </div>
                     </div>
-                    <div class="box4 active">
+
+                    <div class="box-item">
                         <h1>Monitoramento</h1>
+                        <div class="box-texto">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum sunt veniam aperiam perferendis fugit labore blanditiis delectus, sequi, necessitatibus maxime voluptates? Atque vero aspernatur magni, tempora fugit facilis explicabo.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="caixaRi">
                 <div class="imgCont">
-                    <img src="" alt="">
+                    <img src="images/LogoFig.png" alt="">
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="contact" id="contact">
         <div class="contact-container">
@@ -203,5 +216,21 @@
             </div>
         </div>
     </footer>
+<script>
+
+const boxItems = document.querySelectorAll('.box-item');
+boxItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        boxItems.forEach(otherItem => {
+            otherItem.classList.remove('active');
+        });
+        if (!isActive) {
+            item.classList.add('active');
+        }
+    });
+});
+
+</script>
 </body>
 </html>

@@ -293,7 +293,19 @@ a{
     display: block;
 }
 
-
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.about-1 img{
+    height: 160px;
+    width: 160px;
+    border-radius: 80px;
+}
+.about-title h2{
+    color: #053D3A;
+    font-size: 18px;
+}
 
 .contact{
     background-color: #50CFC7;
@@ -333,10 +345,10 @@ a{
 .contact-info button{
     margin-top: 25px;
 }
-hr {
-  border: 0;                
-  height: 1.5px;              
-  background-image: linear-gradient(to right, transparent, #ffffff, transparent); 
+hr{
+    border: 0;
+    height: 1.5px;
+    background-image: linear-gradient(to right, transparent, #ffff, transparent) ;
 }
 
 .footer{

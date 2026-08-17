@@ -278,3 +278,81 @@ a{
 .box-item.active .box-texto {
     display: block;
 }
+
+
+
+.contact{
+    background-color: #50CFC7;
+    height: 300px;
+}
+.contact-btn{
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 25px;
+  color: #50CFC7;
+  font-weight: 700;
+  padding: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 0.5s ease;
+}
+.contact-btn:hover{
+    background-color: #FFE2E6;
+    color: #C43E54;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+.contact-info{
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.contact-info button{
+    margin-top: 25px;
+}
+hr {
+  border: 0;                
+  height: 1.5px;              
+  background-image: linear-gradient(to right, transparent, #ffffff, transparent); 
+}
+
+.footer{
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 160px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.logo-image img{
+    height: 100px;
+    display: flex;
+    justify-self: center
+}
+.text-content p{
+    color: #8F8F8F;
+}
+.text-content{
+    width: 50%;
+}
+
+.bellow-part{
+    background-color: #04302d;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.bellow-part li{ 
+    text-decoration: none;
+}

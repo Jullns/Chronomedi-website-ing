@@ -44,7 +44,8 @@ a{
 .nav-menu a{
     color: rgb(2, 79, 85, 90);
     margin-left: 20px; 
-    font-weight: bold;   
+    font-weight: bold; 
+    transition: 0.5s ease;  
 }
 .nav-menu a:hover{
     color: #50CFC7;
@@ -120,7 +121,18 @@ a{
 }
 
 
-
+.vision-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+.vision-title h4{
+    color: #11ACA2;
+    margin-bottom:  -15px;
+}
 .vision-container{
     background-color: #F8F8F8;
     margin: 20px;
@@ -222,10 +234,11 @@ a{
 }
 .solution-cont{
     background-color: #FFF0F3;
-    padding: 30px;
+    padding: 70px;
 }
 .titleSolution{
     margin-left: 80px;
+    margin-top: 20px;
 }
 .titleSolution h1{
     color: #970018;
@@ -233,6 +246,7 @@ a{
 .caixaLeft{
     margin-left: 100px;
     width: 50%;
+    margin-bottom: 40px;
 }
 .caixaRi{
     width: 50%;
@@ -283,7 +297,7 @@ a{
 
 .contact{
     background-color: #50CFC7;
-    height: 300px;
+    height: 400px;
 }
 .contact-btn{
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
@@ -333,8 +347,8 @@ hr {
     justify-content: center;
     width: 100%;
     gap: 160px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
 .logo-image img{
     height: 100px;
@@ -349,10 +363,28 @@ hr {
 }
 
 .bellow-part{
-    background-color: #04302d;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px;
 }
-.bellow-part li{ 
-    text-decoration: none;
+.bellow-part h1{
+    font-size: 16px;
+}
+.bellow-part li{
+    color: #898989;
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.col3{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
 }

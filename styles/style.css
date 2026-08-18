@@ -2,6 +2,7 @@
 html{
     scrollbar-color: #F98296 #097c75;
     scrollbar-width: auto; 
+    scroll-behavior: smooth;
 }
 *{
     box-sizing: border-box;
@@ -12,14 +13,20 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #F0F0F0;
 }
+
+/*Header*/
 a{
     text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
 }
 .header{
     background-color: #FFFFFF;
     margin: 0 auto;
     border-radius: 15px;
-    padding: 10px;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,18 +41,21 @@ a{
     z-index: 1000;
 }
 .logo{
-    height: 60px;
+    height: 70px;
     width: auto;
+    justify-self: center;
+    display: flex;
 }
 .nav-menu{
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 .nav-menu a{
     color: rgb(2, 79, 85, 90);
-    margin-left: 20px; 
+    margin-left: 10px; 
     font-weight: bold; 
     transition: 0.5s ease;  
+    font-size: 14px;
 }
 .nav-menu a:hover{
     color: #50CFC7;
@@ -54,23 +64,22 @@ a{
     background-color: #F98296;
     color: #621925;
     border-radius: 26px;
-    padding: 10px;
+    padding: 10px 25px;
     border: none;
-    width: 95px;
-    margin-right: 50px;
+    transition: 0.5s ease;
 }
 .btn-header:hover{
     background-color: #7FE8E8;
     color: #053D3A;
 }
 
-
+/*Hero*/
 .hero{
     background-color: #33C5C5;
     color: #053D3A;
     width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     border-radius: 16px;
     padding: 0 20px 30px 20px;
     text-align: center;
@@ -85,27 +94,31 @@ a{
     height: auto;
     margin-top: -235px;
     z-index: 2;
+    position: relative;
 }
-.upperText{
+.hero-title{
     font-size: 100px;
     font-family: "Lexend", sans-serif;
     margin-left: 0;
     font-weight: 650;
 }
-.bellowText p{
+.subtitle p{
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 0;
+    margin-top: 10px;
 }
-.about{
-    background-color: #f8f1f1;
-    height: 500px;
-    padding-top: 20px;
+
+/*Presentation*/
+.presentation{
+    max-width: 1200px;
+    padding: 40px 20px;
 }
-.textTitleDiv{
+.presentation-text{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 40px;
+    align-items: center;
 }
 .title{
     text-align: center;
@@ -115,29 +128,45 @@ a{
 .text{
     display: flex;
     align-self: center;
-    padding-left: 50px;
-    font-size: 18px;
+    padding-left: 20px;
+    font-size: 17px;
     color: #053D3A;
+}
+.presentation-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.presentation-title h4{
+    color: #11ACA2;
+    margin-bottom: 5px;
+}
+.project-image img {
+    border-radius: 12px;
+    width: 70%;
 }
 
 
+/*Vision and Values*/
 .vision-title{
     display: flex;
     flex-direction: column;
     justify-content: center;
     justify-self: center;
     align-items: center;
-    align-self: center;
 }
 .vision-title h4{
     color: #11ACA2;
-    margin-bottom:  -15px;
+    margin-bottom: 5px;
 }
 .vision-container{
     background-color: #F8F8F8;
-    margin: 20px;
+    margin: 30px auto;
+    padding: 40px 20px;
     border-radius: 15px;
-    height: 550px;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
 }
@@ -202,17 +231,21 @@ a{
 }
 
 
-.proposta{
+/*proposal*/
+.proposal-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.proposal{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 30px;
-    margin: 25px;
+    align-items: center;
 }
 .video img{
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: auto;
+    max-width: 70%;
+    border-radius: 20px;
 }
 .video {
     display: flex;
@@ -220,42 +253,40 @@ a{
     justify-content: center;
 }
 .textContent{
-    width: 500px;
+    max-width: 80%;
     font-size: 17px;
 }
-.titleProposta{
-    align-self: center;
-    justify-self: center;
-}
 
-
+/*Solution*/
 .solution{
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
 }
 .solution-cont{
     background-color: #FFF0F3;
-    padding: 70px;
+    padding: 50px 60px;
 }
-.titleSolution{
-    margin-left: 80px;
-    margin-top: 20px;
+.solution-title{
+    max-width: 1200px;
+    margin: 0 auto 20px auto;
 }
-.titleSolution h1{
+.solution-title h1{
     color: #970018;
 }
-.caixaLeft{
-    margin-left: 100px;
-    width: 50%;
-    margin-bottom: 40px;
-}
-.caixaRi{
+.box-left-cont{
     width: 50%;
 }
-.imgCont img{
-    width: 40%;
+.box-right{
+    width: 50%;
     display: flex;
-    align-self: center;
-    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+.solution-image img{
+    width: 250px;
+    height: 100%;
 }
 .box-left {
     display: flex;
@@ -293,23 +324,61 @@ a{
     display: block;
 }
 
+
+/*About us*/
+.about-us{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
 .about-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 .about-1 img{
-    height: 160px;
-    width: 160px;
-    border-radius: 80px;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.about-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.img-about:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
 }
 .about-title h2{
     color: #053D3A;
     font-size: 18px;
 }
+.about-1 h4{
+    color: #8F8F8F;
+    margin-top: -10px;
+}
+.about-title h1{
+    color: #053D3A;
+    text-align: center;
+}
+.about-title{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 70px auto;
+    text-align: left;
+}
 
+
+
+/*Contact*/
 .contact{
-    background-color: #50CFC7;
-    height: 400px;
+    background-color: #36b4ab;
+    padding: 50px 20px 20px 20px;
+    height: 300px;
 }
 .contact-btn{
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
@@ -318,9 +387,9 @@ a{
   border-radius: 25px;
   color: #50CFC7;
   font-weight: 700;
-  padding: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 12px 25px;
+  cursor: pointer;
+  margin-top: 15px;
   transition: 0.5s ease;
 }
 .contact-btn:hover{
@@ -331,16 +400,16 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80%;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
 }
 .contact-info{
     color: #ffffff;
     font-size: 16px;
     display: flex;
-    height: 100%;
     flex-direction: column;
-    justify-content: center;
-    width: 50%;
+    align-items: center;
+    text-align: left;
 }
 .contact-info button{
     margin-top: 25px;
@@ -348,9 +417,13 @@ a{
 hr{
     border: 0;
     height: 1.5px;
+    max-width: 1200px;
+    margin: 0 auto;
     background-image: linear-gradient(to right, transparent, #ffff, transparent) ;
 }
 
+
+/*Footer*/
 .footer{
     align-self: center;
     justify-self: center;
@@ -374,29 +447,28 @@ hr{
     width: 50%;
 }
 
+
+
+
 .bellow-part{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 30px;
+}
+.bellow-part ul{
+    padding-left: 0;
+    list-style: none;
 }
 .bellow-part h1{
     font-size: 16px;
 }
 .bellow-part li{
     color: #898989;
+    margin-bottom: 8px;
 }
-.col1{
+.col1, .col2, .col3{
     display: flex;
     flex-direction: column;
-    justify-self: center;
+    align-items: center;
 }
-.col2{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-}
-.col3{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-}
+

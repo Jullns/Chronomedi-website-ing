@@ -4,60 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/LogoFig.png" type="image/x-icon">
-    <link rel="Stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Chronomedi</title>
 </head>
 <body>
     <!--Header-->
     <header class="header">
-        <img src="images/Chronomedi.png" class="logo" alt="Nome da empresa">
+        <a href="index.html"><img src="images/Chronomedi.png" class="logo" alt="Nome da empresa"></a>
         <nav class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="#proposta">Proposta</a>
+            <a href="#presentation">Apresentação</a>
+            <a href="#proposal">Proposta</a>
+            <a href="#mission">Missão</a>
             <a href="#solution">Solução</a>
-            <a href="#amostra">Sobre nós</a>
+            <a href="#about">Sobre nós</a>
             <a href="politica.html">Política de Segurança</a>
         </nav>
-        <a href=""><button class="btn-header" onclick="alert('Ainda não está disponível!')">Baixe já</button></a>
+        <button class="btn-header" onclick="alert('Ainda não está disponível!')">Baixe já</button>
     </header>
 
     <!--Hero-->
     <section id="hero">
         <div class="hero">
             <div class="hero-content">
-                <h1 class="upperText"> ChronoBox </h1>
+                <h1 class="hero-title"> ChronoBox </h1>
                 
                 <div class="image-container">
                     <img class="img-box" src="images/box.png" alt="ChronoBox image">
                 </div>
             </div>
                 
-            <div class="bellowText">
+            <div class="subtitle">
                 <p>Sua medicação, no horário certo.</p>
             </div>
         </div>
     </section>
     
-    <!--Get to know-->
-    <section id="about">
-        <div class="about">
-            <div class="title">
+    <!--Presentation-->
+    <section id="presentation">
+        <div class="presentation">
+            <div class="presentation-title">
+                <h4>Mais que uma inovação</h4>
                 <h1>Conheça o projeto</h1>
             </div>
-            <div class="textTitleDiv">
+            <div class="presentation-text">
                 <div class="text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe alias officia tenetur beatae amet nulla exercitationem veritatis repellat accusantium. Blanditiis non nobis dolorem commodi nemo voluptas, maxime facere iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sapiente, officia numquam perferendis quisquam ipsam cum iure nisi molestias minus, deleniti itaque, est vero at atque saepe inventore deserunt voluptatibus.
                 </div>
-                <div class="imagePart">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-7iRFQrK1kdTo1-0twsGO7fZhWa7mtkC1oOHMPvUpeA&s=10" alt="">
+                <div class="project-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-7iRFQrK1kdTo1-0twsGO7fZhWa7mtkC1oOHMPvUpeA&s=10" alt="Imagem do Projeto">
                 </div>
             </div>
         </div>
     </section>
 
     <!--Vision and Values-->
-
-    <section id="vision">
+    <section id="mission">
         <div class="vision-container">
             <div class="vision-title">
                 <h4>Por que nos escolher</h4>
@@ -107,20 +108,19 @@
         </div>
     </section>
 
-    <!--Proposta e problemática-->
+    <!--Proposal and problem statement-->
     <section id="proposal">
-        <div class="titleProposta">
+        <div class="proposal-title">
             <h1>Proposta & Problemática</h1>
         </div>
-        <div class="proposta">
+        <div class="proposal">
             <div class="video">
-                <img src="https://i.guim.co.uk/img/media/20491572b80293361199ca2fc95e49dfd85e1f42/0_236_5157_3094/master/5157.jpg?width=700&quality=85&auto=format&fit=max&s=75467b37e566112a23646eeb8cbc9a26" alt="">
+                <img src="https://i.guim.co.uk/img/media/20491572b80293361199ca2fc95e49dfd85e1f42/0_236_5157_3094/master/5157.jpg?width=700&quality=85&auto=format&fit=max&s=75467b37e566112a23646eeb8cbc9a26" alt="Imagem descritiva da problemática">
             </div>
             <div class="textContent">
                 <p>
                     O uso incorreto de medicamentos representa um desafio para pacientes de todas as idades, ocasionando esquecimentos, falhas na organização da rotina terapêutica e dificuldades na interpretação de prescrições médicas.
-                    <br>
-                    <br>
+                    <br><br>
                     O Chronomedi foi desenvolvido para minimizar esses problemas por meio da automação, organização e monitoramento do tratamento, oferecendo maior segurança e qualidade de vida.
                 </p>
             </div>
@@ -129,11 +129,11 @@
 
     <!--Solution-->
     <section id="solution" class="solution-cont">
-        <div class="titleSolution">
+        <div class="solution-title">
             <h1>Soluções</h1>
         </div>
         <div class="solution">
-            <div class="caixaLeft">
+            <div class="box-left-cont">
                 <div class="box-left">
                     <div class="box-item">
                         <h1>Caixa de remédios</h1>
@@ -165,72 +165,76 @@
                 </div>
             </div>
 
-            <div class="caixaRi">
-                <div class="imgCont">
-                    <img src="images/LogoFig.png" alt="">
+            <div class="box-right">
+                <div class="solution-image">
+                    <img src="images/LogoFig.png" alt="Logo da Solução">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about-us">
-        <h1>Sobre nós</h1>
+    <!-- About us -->
+    <section class="about-us" id="about">
         <div class="about-title">
+            <h1>Sobre nós</h1>
             <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi labore sit, beatae nisi delectus architecto numquam earum</h2>
             <p>lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
 
         <div class="about-grid">
             <div class="about-1">
-                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" alt=""></a>
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" class="img-about" alt=""></a>
                 <h3>Responsibility</h3>
                 <h4>Lorem ipsum</h4>
             </div>
 
             <div class="about-1">
-                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" alt=""></a>
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" class="img-about" alt=""></a>
                 <h3>Num 2</h3>
                 <h4>Lorem ipsum</h4>
             </div>
 
             <div class="about-1">
-                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" alt=""></a>
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" class="img-about" alt=""></a>
                 <h3>Num 3</h3>
                 <h4>Lorem ipsum</h4>
             </div>
 
             <div class="about-1">
-                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" alt=""></a>
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" class="img-about" alt=""></a>
                 <h3>Num 4</h3>
                 <h4>Lorem ipsum</h4>
             </div>
 
             <div class="about-1">
-                <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" alt=""></a>
+                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" class="img-about" alt=""></a>
                 <h3>Num 5</h3>
-                <h4>Lorem ispum</h4>
+                <h4>Lorem ipsum</h4>
             </div>
         </div>
     </section>
 
-
+    <!-- Contact -->
     <section class="contact" id="contact">
         <div class="contact-container">
             <div class="contact-info">
                 <h1>Mais tempo para o que realmente importa.</h1>
-                <a href="mailto:chronomedi.contato@gmail.com" class="botao-email"><button class="contact-btn">Entre em contato</button></a>
+                <a href="mailto:chronomedi.contato@gmail.com" class="botao-email">
+                    <button class="contact-btn">Entre em contato</button>
+                </a>
             </div>
         </div>
         <hr>
     </section>
 
+    <!-- Footer -->
     <footer class="footer-cont">
         <div class="footer">
             <div class="logo-image">
-                <img src="images/Group 2.png" alt="">
+                <img src="images/Group 2.png" alt="Logo Footer">
             </div>
             <div class="text-content">
-                <p>Lorem ipsum dolos si amet qui massa in folor nunc lectus curs Lorem ipsum dolos si amet qui massa in folor nunc lectus curs Lorem ipsum dolos si amet qui massa in folor nunc lectus curs nunc lectus curs Lorem ipsum dolos si amet qui massa in folor nunc lectus curs nunc lectus curs Lorem ipsum dolos si amet qui massa in folor nunc lectus curs nunc lectus curs Lorem ipsum dolos si amet qui massa in folor nunc lectus curs</p>
+                <p>Lorem ipsum dolos si amet qui massa in folor nunc lectus curs Lorem ipsum dolos si amet qui massa in folor nunc lectus curs Lorem ipsum dolos si amet qui massa in folor nunc lectus curs</p>
             </div>
         </div>
 
@@ -238,8 +242,8 @@
             <div class="col1">
                 <h1>Empresa</h1>
                 <ul>
-                    <li>Monografia</li>
-                    <li>Missão e valores</li>
+                    <a href="" onclick="alert('Ainda não está disponível!')"><li>Monografia</li></a>
+                    <a href="" onclick="alert('Ainda não está disponível!')"><li>Missão e valores</li></a>
                 </ul>
             </div>
             <div class="col2">
@@ -252,27 +256,26 @@
             <div class="col3">
                 <h1>Produtos & Serviços</h1>
                 <ul>
-                    <li>Caixinha</li>
-                    <li>Aplicativo</li>
+                    <a href="" onclick="alert('Ainda não está disponível!')"><li>Caixinha</li></a>
+                    <a href="" onclick="alert('Ainda não está disponível!')"><li>Aplicativo</li></a>
                 </ul>
             </div>
         </div>
     </footer>
-<script>
 
-const boxItems = document.querySelectorAll('.box-item');
-boxItems.forEach(item => {
-    item.addEventListener('click', () => {
-        const isActive = item.classList.contains('active');
-        boxItems.forEach(otherItem => {
-            otherItem.classList.remove('active');
+    <script>
+        const boxItems = document.querySelectorAll('.box-item');
+        boxItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                boxItems.forEach(otherItem => {
+                    otherItem.classList.remove('active');
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
         });
-        if (!isActive) {
-            item.classList.add('active');
-        }
-    });
-});
-
-</script>
+    </script>
 </body>
 </html>

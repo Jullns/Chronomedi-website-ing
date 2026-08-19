@@ -8,7 +8,6 @@ html{
     box-sizing: border-box;
 }
 body{
-    padding-top: 30px;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #F0F0F0;
@@ -43,7 +42,6 @@ img{
 .logo{
     height: 70px;
     width: auto;
-    justify-self: center;
     display: flex;
 }
 .nav-menu{
@@ -72,6 +70,84 @@ img{
     background-color: #7FE8E8;
     color: #053D3A;
 }
+.btn-header:active{
+    transform: translateY(2px);
+}
+
+/*Header mobile*/
+.header-mobile {
+    display: none;
+    background-color: #f8f6f6;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 5px 15px;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 90%;
+    position: fixed;
+    top: 15px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+.menu-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.menu-btn span {
+    font-size: 30px;
+    color: #053D3A;
+}
+
+/*Menu*/
+.mobile-menu{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background-color: #F8F8F8;
+    z-index: 10000;
+    padding: 80px 25px 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.mobile-menu.open {
+    display: block;
+}
+.menu-fechar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.menu-fechar span {
+    font-size: 30px;
+    color: #053D3A;
+}
+.mobile-menu a {
+    display: block;
+    padding: 15px 10px;
+    color: #053D3A;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #EEEEEE;
+}
+.mobile-menu a:hover {
+    color: #50CFC7;
+}
+.mobile-menu .btn-header {
+    margin-top: 20px;
+    width: 100%;
+}
 
 /*Hero*/
 .hero{
@@ -83,6 +159,7 @@ img{
     border-radius: 16px;
     padding: 0 20px 30px 20px;
     text-align: center;
+    overflow: hidden;
 }
 .image-container{
     width: 100%;
@@ -92,7 +169,7 @@ img{
     width: 570px;
     max-width: 90%;
     height: auto;
-    margin-top: -235px;
+    margin-top: -210px;
     z-index: 2;
     position: relative;
 }
@@ -111,7 +188,9 @@ img{
 
 /*Presentation*/
 .presentation{
+    width: 90%;
     max-width: 1200px;
+    margin: 0 auto;
     padding: 40px 20px;
 }
 .presentation-text{
@@ -146,6 +225,11 @@ img{
 .project-image img {
     border-radius: 12px;
     width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
 }
 
 
@@ -167,6 +251,7 @@ img{
     padding: 40px 20px;
     border-radius: 15px;
     max-width: 1200px;
+    width: 90%;
     display: flex;
     flex-direction: column;
 }
@@ -233,8 +318,11 @@ img{
 
 /*proposal*/
 .proposal-title{
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
 }
 .proposal{
     display: grid;
@@ -242,7 +330,11 @@ img{
     padding: 30px;
     align-items: center;
 }
-.video img{
+.proposal-title h4 {
+    color: #11ACA2;
+    margin-bottom: 5px;
+}
+.video video{
     height: auto;
     max-width: 70%;
     border-radius: 20px;
@@ -285,7 +377,7 @@ img{
     align-items: center;
 }
 .solution-image img{
-    width: 250px;
+    width: 370px;
     height: 100%;
 }
 .box-left {
@@ -442,12 +534,11 @@ hr{
 }
 .text-content p{
     color: #8F8F8F;
+    text-align: left;
 }
 .text-content{
     width: 50%;
 }
-
-
 
 
 .bellow-part{
@@ -471,4 +562,263 @@ hr{
     flex-direction: column;
     align-items: center;
 }
+.credit p{
+    color: #898989;
+    text-align: center;
+}
 
+/*Medias*/
+@media (max-width: 1087px) {
+    .nav-menu {
+        gap: 10px;
+    }
+    .nav-menu a {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .btn-header {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    .hero-title {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 907px) {
+    .nav-menu {
+        gap: 5px;
+    }
+    .nav-menu a {
+        font-size: 11px;
+
+        margin-left: 3px;
+    }
+    .btn-header {
+        padding: 8px 12px;
+
+        font-size: 12px;
+    }
+    .hero-title {
+        font-size: 70px;
+    }
+    .presentation-text {
+        gap: 20px;
+    }
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 884px) {
+    .header {
+        display: none;
+    }
+    .header-mobile {
+        background-color: #FFFFFF;
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        width: 90%;
+        max-width: 1200px;
+        position: fixed;
+        top: 15px;
+        left: 0;
+        right: 0;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        z-index: 1000;
+    }
+    .header-mobile .logo {
+        height: 55px;
+    }
+    .hero {
+        width: 90%;
+        margin-top: 90px;
+        padding: 20px 15px 25px;
+    }
+    .hero-title {
+        font-size: 50px;
+    }
+    .img-box {
+        width: 450px;
+        max-width: 90%;
+        margin-top: -140px;
+    }
+    .subtitle p {
+        font-size: 18px;
+    }
+    .presentation {
+        width: 90%;
+        padding: 30px 10px;
+    }
+    .presentation-text {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .text {
+        padding-left: 0;
+        width: 100%;
+        font-size: 16px;
+    }
+    .project-image {
+        width: 100%;
+    }
+    .project-image img {
+        width: 80%;
+    }
+    .vision-container {
+        width: 90%;
+        padding: 30px 15px;
+    }
+    .flip-card {
+        width: 280px;
+
+        height: 340px;
+    }
+    .proposal {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .video {
+        width: 100%;
+    }
+    .video video {
+        max-width: 90%;
+    }
+    .textContent {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+    .solution {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    .solution-cont {
+        padding: 40px 20px;
+    }
+    .box-left-cont {
+        width: 100%;
+    }
+    .box-left {
+        width: 100%;
+    }
+    .box-item {
+        width: 100%;
+    }
+    .box-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .about-us {
+        width: 90%;
+        padding: 10px;
+    }
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+    .contact {
+        padding: 40px 20px 20px;
+        min-height: 250px;
+    }
+    .contact-info h1 {
+        font-size: 25px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 50px auto;
+        gap: 25px;
+        text-align: center;
+    }
+    .logo-image img {
+        height: 80px;
+    }
+    .text-content {
+        width: 100%;
+    }
+    .bellow-part {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 30px auto;
+        gap: 30px;
+    }
+    .col1, .col2, .col3 {
+        width: 100%;
+    }
+    .footer-cont p {
+        font-size: 14px;
+        padding: 20px 10px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .hero-title {
+        font-size: 40px;
+    }
+    .img-box {
+        width: 350px;
+        margin-top: -99px;
+    }
+    .subtitle p {
+        font-size: 16px;
+    }
+    .presentation-title h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .presentation-title h4 {
+        font-size: 14px;
+        text-align: center;
+    }
+    .vision-title h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .proposal-title h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .flip-card {
+        width: 250px;
+        height: 320px;
+    }
+    .flip-card-back p, .flip-card-back2 p, .flip-card-back3 p {
+        font-size: 18px;
+    }
+    .flip-card-front2 h1, .flip-card-front h1, .flip-card-front3 h1{
+        font-size: 25px;
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .about-title h2 {
+        font-size: 16px;
+    }
+    .solution-title h1 {
+        font-size: 25px;
+    }
+    .contact-info h1 {
+        font-size: 21px;
+        text-align: center;
+    }
+    .mobile-menu {
+        width: 80%;
+    }
+}

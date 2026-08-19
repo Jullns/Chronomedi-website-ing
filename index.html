@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/LogoFig.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
     <title>Chronomedi</title>
 </head>
 <body>
@@ -17,10 +19,42 @@
             <a href="#mission">Missão</a>
             <a href="#solution">Solução</a>
             <a href="#about">Sobre nós</a>
-            <a href="politica.html">Política de Segurança</a>
+            <a href="#" onclick="alert('Ainda não está disponível!')">Política de segurança</a>
         </nav>
         <button class="btn-header" onclick="alert('Ainda não está disponível!')">Baixe já</button>
     </header>
+
+    <!--Header mobile-->
+    <header class="header-mobile">
+
+        <a href="index.html">
+            <img src="images/Chronomedi.png" class="logo" alt="Nome da empresa">
+        </a>
+
+        <button class="menu-btn" onclick="menu()">
+            <span class="material-symbols-outlined">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+            </span>
+        </button>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="menu-fechar" onclick="menuFechado()">
+            <span class="material-symbols-outlined">
+                close
+            </span>
+        </button>
+        <a href="#presentation" onclick="menuFechado()">Apresentação</a>
+        <a href="#proposal" onclick="menuFechado()">Proposta</a>
+        <a href="#mission" onclick="menuFechado()">Missão</a>
+        <a href="#solution" onclick="menuFechado()">Solução</a>
+        <a href="#about" onclick="menuFechado()">Sobre nós</a>
+        <a href="#" onclick="alert('Ainda não está disponível!')">Política de Segurança</a>
+
+        <button class="btn-header" onclick="alert('Ainda não está disponível!')">
+            Baixe já
+        </button>
+    </div>
 
     <!--Hero-->
     <section id="hero">
@@ -34,7 +68,12 @@
             </div>
                 
             <div class="subtitle">
-                <p>Sua medicação, no horário certo.</p>
+                <p>
+                    Sua medicação, no horário certo.
+                    <br>
+                    <br>
+                    Baixe já!
+                </p>
             </div>
         </div>
     </section>
@@ -48,10 +87,10 @@
             </div>
             <div class="presentation-text">
                 <div class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe alias officia tenetur beatae amet nulla exercitationem veritatis repellat accusantium. Blanditiis non nobis dolorem commodi nemo voluptas, maxime facere iusto. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sapiente, officia numquam perferendis quisquam ipsam cum iure nisi molestias minus, deleniti itaque, est vero at atque saepe inventore deserunt voluptatibus.
+                    O Chronomedi é uma caixa organizadora de remédios IoT (Internet das Coisas). É integrada ao aplicativo Chronomedi App, a partir do qual o usuário pode cadastrar e gerenciar os remédios que está tomando. Foi criado visando auxiliar e facilitar o processo de gerenciamento de medicamentos.
                 </div>
                 <div class="project-image">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-7iRFQrK1kdTo1-0twsGO7fZhWa7mtkC1oOHMPvUpeA&s=10" alt="Imagem do Projeto">
+                    <img class="presentation-image" src="images/presentation.png" alt="Imagem do Projeto">
                 </div>
             </div>
         </div>
@@ -115,7 +154,7 @@
         </div>
         <div class="proposal">
             <div class="video">
-                <img src="https://i.guim.co.uk/img/media/20491572b80293361199ca2fc95e49dfd85e1f42/0_236_5157_3094/master/5157.jpg?width=700&quality=85&auto=format&fit=max&s=75467b37e566112a23646eeb8cbc9a26" alt="Imagem descritiva da problemática">
+        
             </div>
             <div class="textContent">
                 <p>
@@ -138,28 +177,50 @@
                     <div class="box-item">
                         <h1>Caixa de remédios</h1>
                         <div class="box-texto">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum sunt veniam aperiam perferendis fugit labore blanditiis delectus, sequi, necessitatibus maxime voluptates? Atque vero aspernatur magni, tempora fugit facilis explicabo.</p>
+                            <p>
+                                A ChronoBox é uma caixa organizadora inteligente desenvolvida para auxiliar
+                                no armazenamento e na administração dos medicamentos. O dispositivo possui
+                                seis compartimentos com tampas automatizadas, permitindo que cada medicamento
+                                seja associado a um slot e liberado no horário programado.
+                            </p>
                         </div>
                     </div>
 
                     <div class="box-item">
                         <h1>Alertas</h1>
                         <div class="box-texto">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum sunt veniam aperiam perferendis fugit labore blanditiis delectus, sequi, necessitatibus maxime voluptates? Atque vero aspernatur magni, tempora fugit facilis explicabo.</p>
+                            <p>
+                                O sistema utiliza diferentes formas de alerta para lembrar o usuário sobre
+                                o horário da medicação. A caixa pode utilizar sinais luminosos e sonoros,
+                                enquanto o aplicativo pode enviar notificações, emitir sons e utilizar
+                                vibração. Os alertas podem ser personalizados de acordo com as preferências
+                                do usuário.
+                            </p>
                         </div>
                     </div>
 
                     <div class="box-item">
                         <h1>Aplicativo</h1>
                         <div class="box-texto">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum sunt veniam aperiam perferendis fugit labore blanditiis delectus, sequi, necessitatibus maxime voluptates? Atque vero aspernatur magni, tempora fugit facilis explicabo.</p>
+                            <p>
+                                O Chronomedi App permite cadastrar medicamentos, definir horários, dosagens,
+                                frequência, via de administração e compartimentos da caixa. O usuário
+                                também pode acompanhar suas doses, confirmar a administração dos medicamentos,
+                                configurar alertas, consultar o estoque e sincronizar as informações com a
+                                ChronoBox.
+                            </p>
                         </div>
                     </div>
 
                     <div class="box-item">
                         <h1>Monitoramento</h1>
                         <div class="box-texto">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dolorum sunt veniam aperiam perferendis fugit labore blanditiis delectus, sequi, necessitatibus maxime voluptates? Atque vero aspernatur magni, tempora fugit facilis explicabo.</p>
+                            <p>
+                                O sistema registra as administrações confirmadas e as doses não administradas,
+                                permitindo acompanhar o histórico do tratamento. O aplicativo também pode
+                                informar quando a quantidade de determinado medicamento estiver próxima do
+                                fim, auxiliando o usuário no controle de seu estoque.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -167,7 +228,7 @@
 
             <div class="box-right">
                 <div class="solution-image">
-                    <img src="images/LogoFig.png" alt="Logo da Solução">
+                    <img src="images/solution.png" alt="Logo da Solução">
                 </div>
             </div>
         </div>
@@ -177,39 +238,18 @@
     <section class="about-us" id="about">
         <div class="about-title">
             <h1>Sobre nós</h1>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi labore sit, beatae nisi delectus architecto numquam earum</h2>
-            <p>lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h2>
+                Tecnologia, acessibilidade e inovação para tornar o gerenciamento de
+                medicamentos mais simples e seguro.
+            </h2>
+            <p>A Chronomedi é um projeto voltado ao desenvolvimento de soluções tecnológicas para auxiliar no gerenciamento da rotina medicamentosa.</p>
         </div>
 
         <div class="about-grid">
             <div class="about-1">
-                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" class="img-about" alt=""></a>
-                <h3>Responsibility</h3>
-                <h4>Lorem ipsum</h4>
-            </div>
-
-            <div class="about-1">
-                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" class="img-about" alt=""></a>
-                <h3>Num 2</h3>
-                <h4>Lorem ipsum</h4>
-            </div>
-
-            <div class="about-1">
-                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" class="img-about" alt=""></a>
-                <h3>Num 3</h3>
-                <h4>Lorem ipsum</h4>
-            </div>
-
-            <div class="about-1">
-                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" class="img-about" alt=""></a>
-                <h3>Num 4</h3>
-                <h4>Lorem ipsum</h4>
-            </div>
-
-            <div class="about-1">
-                <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDo70vnHrEsWZXdGaV6ETBzVR4f79JZldP0yZ8NzcyiQ&s=10" class="img-about" alt=""></a>
-                <h3>Num 5</h3>
-                <h4>Lorem ipsum</h4>
+                <a href="#"><img src="images/Jullia.png" class="img-about" alt=""></a>
+                <h3>Jullia dos Santos</h3>
+                <h4>Desenvolvedora</h4>
             </div>
         </div>
     </section>
@@ -234,7 +274,12 @@
                 <img src="images/Group 2.png" alt="Logo Footer">
             </div>
             <div class="text-content">
-                <p>Lorem ipsum dolos si amet qui massa in folor nunc lectus curs Lorem ipsum dolos si amet qui massa in folor nunc lectus curs Lorem ipsum dolos si amet qui massa in folor nunc lectus curs</p>
+                <p> 
+                    A Chronomedi desenvolve soluções tecnológicas para auxiliar na organização,
+                    monitoramento e administração de medicamentos, unindo uma caixa organizadora
+                    inteligente a um aplicativo para proporcionar mais autonomia e segurança
+                    ao usuário.
+                </p>
             </div>
         </div>
 
@@ -261,6 +306,10 @@
                 </ul>
             </div>
         </div>
+        <div class="credit">
+            <hr>
+            <p>© 2026 Chronomedi. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script>
@@ -276,6 +325,15 @@
                 }
             });
         });
+        function menu(){
+            const menu = document.getElementById("mobileMenu")
+            menu.classList.toggle("open")
+        }
+
+        function menuFechado() {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.remove("open");
+        }
     </script>
 </body>
 </html>
